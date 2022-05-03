@@ -1,0 +1,61 @@
+.App {
+  background-color: gray;
+  height: 750px;
+  width: 100%;
+  position: relative;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 80px;
+  width: 400px;
+}
+.parent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.child {
+  border: 1px solid #000;
+}
+.output {
+  grid-column: 1/5;
+  color: white;
+  background-color: #1c1c1c;
+  display: grid;
+  align-items: center;
+  justify-content: end;
+  padding-right: 20px;
+  text-align: right;
+}
+.zero {
+  grid-column: 1/3;
+  display: grid;
+  align-items: center;
+  justify-content: start;
+  padding-left: 40px;
+}
+div,
+button {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+    Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-size: 30px;
+}
+button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+.orange {
+  background-color: #ff9500;
+}
+.light-gray {
+  background-color: azure;
+}
+.dark-gray {
+  background-color: darkgray;
+}
